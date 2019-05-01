@@ -94,6 +94,7 @@ describe './lib/turn.rb' do
       turn(board)
     end
 
+=begin
     it 'calls the input_to_index method', skip: true do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       allow($stdout).to receive(:puts)
@@ -105,7 +106,8 @@ describe './lib/turn.rb' do
       turn(board)
     end
 
-    it 'validates the input correctly', skip: true do
+
+it 'validates the input correctly', skip: true do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       allow($stdout).to receive(:puts)
 
@@ -113,10 +115,10 @@ describe './lib/turn.rb' do
       expect(self).to receive(:valid_move?).with(board, 0).and_return(true)
 
       turn(board)
-    end
+    end"
 
 
-    it 'asks for input again after a failed validation', skip: true do
+"    it 'asks for input again after a failed validation', skip: true do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
       allow($stdout).to receive(:puts)
@@ -126,6 +128,7 @@ describe './lib/turn.rb' do
 
       turn(board)
     end
+=end
 
     it 'makes valid moves' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
